@@ -1,3 +1,16 @@
 body {
-    background-color: lightblue;
+    display: flex; /* Aktivera flexbox */
+    justify-content: center; /* Horisontell centrering */
+    align-items: center; /* Vertikal centrering */
+    height: 10; /* Gör att body fyller hela höjden på webbläsaren */
+    margin: 0; /* Ta bort eventuella marginaler från webbläsaren */
+    text-align: center; /* Centrerar textinnehåll */
+    flex-direction: column; /* Lägg till om du vill att innehåll staplas vertikalt */
+}
+
+img {
+    max-width: 50%; /* Gör bilden max 50% av sin containerbredd */
+    height: auto;   /* Bevara proportionerna */
+    margin: 20px auto; /* Centrera och lägg till lite mellanrum */
+    display: block; /* Gör bilden till ett blockelement för centrering */
 }

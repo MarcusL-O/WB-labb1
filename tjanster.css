@@ -1,8 +1,75 @@
-body {
-    background-color: #f0f0f0;
+:root {
+    --primary-color: #4CAF50; /* Grön */
+    --secondary-color: #FFC107; /* Gul */
+    --tertiary-color: #00e5fe;
+    --background-color: #f4f4f4; /* Ljusgrå */
+    --text-color: #333; /* Mörk text */
 }
 
-h1 {
-    color: blue;
-    text-align: center;
+body {
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+}
+
+#product-list .card {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#cart-items .list-group-item {
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Navigeringsmeny */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Ursprunglig textfärg */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rundade hörn */
+    transition: background-color 0.3s; /* Smidig övergång */
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color); /* Gul bakgrund på hover */
+    color: white; /* Behåll vit text */
+}
+
+/* Orange knapp med svart text */
+button.btn-orange {
+    background-color: var(--tertiary-color); /* Ljus orange bakgrund */
+    color: black; /* Svart text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
 }

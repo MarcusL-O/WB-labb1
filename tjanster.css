@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #4CAF50; /* Grön */
-    --secondary-color: #FFC107; /* Gul */
+    --primary-color: #4CAF50; 
+    --secondary-color: #FFC107; 
     --tertiary-color: #00e5fe;
-    --background-color: #f4f4f4; /* Ljusgrå */
-    --text-color: #333; /* Mörk text */
+    --background-color: #f4f4f4; 
+    --text-color: #333; 
 }
 
 body {
@@ -51,22 +51,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white; /* Ursprunglig textfärg */
+    color: white; 
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 5px; /* Rundade hörn */
-    transition: background-color 0.3s; /* Smidig övergång */
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: var(--secondary-color); /* Gul bakgrund på hover */
-    color: white; /* Behåll vit text */
+    background-color: var(--secondary-color); 
+    color: white; 
 }
 
-/* Orange knapp med svart text */
 button.btn-orange {
-    background-color: var(--tertiary-color); /* Ljus orange bakgrund */
-    color: black; /* Svart text */
+    background-color: var(--tertiary-color);
+    color: black; 
     border: none;
     border-radius: 5px;
     padding: 10px 15px;

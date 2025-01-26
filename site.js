@@ -25,5 +25,5 @@ function updateCart() {
         cartItems.appendChild(li);
     });
 
-    cartTotal.textContent = `${cart.length * 50} kr`; // Exempel: varje produkt är 50 kr
+    cartTotal.textContent = `${cart.length * 50} kr`; 
 }

@@ -6,7 +6,7 @@
     <title>Tjänster & Produkter - PotatisButiken</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <!-- Länk till CSS fil -->
+    <!-- Länk till egen CSS -->
     <link rel="stylesheet" href="tjanster.css">
 </head>
 <body>
@@ -33,30 +33,34 @@
             <h2 class="text-success">Våra tjänster & Produkter</h2>
             <p>Här hittar du alla våra fantastiska produkter och tjänster relaterade till potatis!</p>
             <div id="product-list" class="row g-3">
+                <!-- Produktkort -->
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-success">
+                        <img src="potatislada.jpg.jpg" class="card-img-top" alt="Rustic wooden potato box filled with fresh potatoes">
                         <div class="card-body">
                             <h5 class="card-title">Potatislåda</h5>
                             <p class="card-text">En låda full med härliga potatisar.</p>
-                            <button class="btn btn-orange" onclick="addToCart('Potatislåda')">Lägg till i kundvagn</button>
+                            <button class="btn btn-primary w-100" onclick="addToCart('Potatislåda', 50)">Lägg till i kundvagn</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-success">
+                        <img src="ekologisk-potatis.jpg.jpg" class="card-img-top" alt="Organic potatoes in an eco-friendly kraft paper bag">
                         <div class="card-body">
                             <h5 class="card-title">Ekologisk Potatis</h5>
                             <p class="card-text">Färsk ekologisk potatis.</p>
-                            <button class="btn btn-orange" onclick="addToCart('Ekologisk Potatis')">Lägg till i kundvagn</button>
+                            <button class="btn btn-primary w-100" onclick="addToCart('Ekologisk Potatis', 75)">Lägg till i kundvagn</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card border-success">
+                        <img src="lyxig-potatissase.jpg.jpg" class="card-img-top" alt="Luxurious potato bag with premium packaging">
                         <div class="card-body">
                             <h5 class="card-title">Lyxig Potatispåse</h5>
                             <p class="card-text">En exklusiv påse med potatis.</p>
-                            <button class="btn btn-orange" onclick="addToCart('Lyxig Potatispåse')">Lägg till i kundvagn</button>
+                            <button class="btn btn-primary w-100" onclick="addToCart('Lyxig Potatispåse', 150)">Lägg till i kundvagn</button>
                         </div>
                     </div>
                 </div>
@@ -66,7 +70,7 @@
         <section id="cart" class="mb-5">
             <h3 class="text-success">Kundvagn</h3>
             <ul id="cart-items" class="list-group mb-3">
-                <!-- JavaScript hanterar kundvagnen här -->
+                <!-- JavaScript uppdaterar kundvagnen här -->
             </ul>
             <p><strong>Total:</strong> <span id="cart-total">0 kr</span></p>
         </section>
@@ -83,5 +87,3 @@
     <script src="site.js"></script>
 </body>
 </html>
-
-

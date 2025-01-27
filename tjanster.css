@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4CAF50; 
     --secondary-color: #FFC107; 
-    --tertiary-color: #00e5fe;
+    --tertiary-color: #007BFF; /* Ändrat till blå färg */
     --background-color: #f4f4f4; 
     --text-color: #333; 
 }
@@ -63,12 +63,17 @@ nav ul li a:hover {
     color: white; 
 }
 
-button.btn-orange {
-    background-color: var(--tertiary-color);
-    color: black; 
+button.btn-blue {
+    background-color: var(--tertiary-color); /* Blå knappfärg */
+    color: white; 
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     font-weight: bold;
     cursor: pointer;
+}
+
+button.btn-blue:hover {
+    background-color: darkblue;
+    color: white;
 }
